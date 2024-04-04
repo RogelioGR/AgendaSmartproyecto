@@ -1,0 +1,64 @@
+.groupCard{
+    box-sizing: border-box;
+    width: 250px;
+    height: 200px;
+    background: rgba(114, 0, 202, 0.58);
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    margin: .3rem;
+
+  }
+
+  .groupCard {
+    color: aliceblue;
+  }
+  
+  .groupCard:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .groupCard:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  .main-Group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+
+  .tittle{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+
+
+   
+  .tittle a {
+    margin: .5rem;
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s, box-shadow 0.5s; 
+  }
+  
+  .tittle a:hover {
+    color: rgb(153, 0, 255); 
+    font-weight: bold;
+  
+  }
+
+

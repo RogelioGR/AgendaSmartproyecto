@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0),
+     rgb(49, 0, 82), rgb(35, 5, 54), rgb(0, 0, 0));
+    }
+
+.formulario{
+    width: 420px;
+    color: aliceblue;
+}
+.formulario h2{
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem;
+} 
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 700px;
+    position: relative;
+    background: rgba(97, 97, 97, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+
+
+}
+   
+.contenedor img{
+    width: 30%;
+    padding: 20px;
+}
+
+
+.imput_contenedor input{
+    width: 100%;
+    height: 100%;
+    background: #222222;
+    border-radius: 3rem;
+    padding: 10px 20px;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    margin: 10px;
+}
+.imput_contenedor input:hover {
+    box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+  }
+  
+  .imput_contenedor input:focus {
+    box-shadow: 0 0 0 .15vw rgb(132, 1, 255);
+  }
+
+button {
+    border: none;
+    background-image: linear-gradient(30deg, #26013b, #5f1491);
+    border-radius: 10px;
+    background-size: 100% auto;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    margin: 1rem;
+    align-items: center;
+   }
+   a{
+    text-decoration: none;
+    color: antiquewhite;
+   }
+   
+   button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #b620fc66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
+   .logoRegist{
+    display: flex;
+    width: 30%;
+    padding: 20px;
+   }
+
+.resgistrar a{
+    color: #9000f0;
+}
+ 
+
+
+
+
+
