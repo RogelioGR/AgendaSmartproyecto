@@ -168,13 +168,16 @@ h3{
     cursor: pointer;
   }
   .main-skills{
-    display:block;
+    display: flex;
     margin-top: 10px;
     padding: 1rem;
+    FLEX-FLOW: column;
+    JUSTIFY-CONTENT: center;
+    align-items: center;
   }
   .main-skills .card{
     display: block;
-    width: 100%;
+    width: 80rem;
     margin: 10px;
     background: #292929;
     border-radius: 20px;

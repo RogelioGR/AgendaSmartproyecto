@@ -14,7 +14,7 @@
     justify-content: center;
     user-select: none;
     font-weight: bolder;
-    margin: .3rem;
+    margin: 1.3rem;
 
   }
 
@@ -34,7 +34,7 @@
   .main-Group{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 2rem;
   }
