@@ -12,25 +12,17 @@
   margin: 5px;
   border-radius: 1rem;
 }
-.main-task {
-  display: flex;
-  margin-top: 10px;
-  padding: 1rem;
-  FLEX-FLOW: row;
-  JUSTIFY-CONTENT: center;
-  align-items: center;
-}
 .main-task{
   display: flex;
   margin-top: 10px;
   padding: 1rem;
-  FLEX-FLOW: row;
+  FLEX-FLOW: column;
   JUSTIFY-CONTENT: center;
   align-items: center;
 }
 .main-task .card{
   display: block;
-  width: 80rem;
+  width: 50rem;
   margin: 10px;
   background: #292929;
   border-radius: 20px;
@@ -48,6 +40,12 @@
   color: aliceblue;
   
 }
+.task-center{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 
 /* Hide the default checkbox */
@@ -61,7 +59,7 @@
  }
  
  .checkbox{
-  display: block;
+  display: contents;
   position: relative;
   cursor: pointer;
   font-size: 28px;

@@ -93,8 +93,9 @@
                                     <p>nombre de la Actividad</p>
                                     <div class="functionbutton">
                                        
-                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#buttonModal"><i class="fas fa-edit"></i></button>
-                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buttonModalDrop"><i class="fas fa-trash-alt"></i></button>
+                                        <button type="button" class="btn btn-success buttonModal" data-bs-toggle="modal" data-modal-id="myModalEditAct"><i class="fas fa-edit"></i></button>
+                                        <button type="button" class="btn btn-danger buttonModal" data-bs-toggle="modal" data-modal-id="myModalDrop"><i class="fas fa-trash-alt"></i></button>
+                                        <button type="button" class="btn btn-primary buttonModal" data-bs-toggle="modal" data-modal-id="myModalFinish">finalizado</button>
                                   </div>
                                   </div>
                                 <div class="examples">
@@ -111,6 +112,7 @@
                                         <p>
                                            fecha
                                         </p>
+                                        <p>EStatus</p>
                                     </div>
 
                                 </div>
@@ -121,54 +123,11 @@
             </main>
         </div>
     </div>
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Editar</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nombre de la Actividad</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" value="nombre">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
-                <textarea class="form-control" type id="exampleFormControlTextarea1" rows="3" >njnjn</textarea>
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label" >fecha limite</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" value="fecha 18/09/1880">
-              </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Modal Eliminar-->
-<div class="modal fade" id="myModalDrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar Actividad</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-           <p>¿estas seguro de elimnar esta Actividad?</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary">Eliminar</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
+
+
 
 
 

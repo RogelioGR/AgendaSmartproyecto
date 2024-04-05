@@ -5,19 +5,30 @@ window.onload = function(){
 }
 
 
-// Modal de eliminar
-var myModalBtn = document.querySelector('[data-bs-target="#buttonModal"]');
-myModalBtn.addEventListener('click', function () {
-    var myModal = new bootstrap.Modal(document.getElementById('myModal'));
-    myModal.show();
 
-    
-});
+// funcion de modal en General
 
-//Modal en General
-var myModalBtn = document.querySelector('[data-bs-target="#buttonModalDrop"]');
-myModalBtn.addEventListener('click', function () {
-    var myModal = new bootstrap.Modal(document.getElementById('myModalDrop'));
-    myModal.show();
+$(document).ready(function () {
+    function abrirModal(modalId) {
+        var modalruta = '/html/modals/' + modalId + '.html';
+        $.get(modalruta, function (data) {
+            $('body').append(data);
+            $('#' + modalId).modal('show');
+            $('#' + modalId).on('hidden.bs.modal', function () {
+                $('#' + modalId).remove();
+            });
+        });
+    }
+
+    $('.buttonModal').on('click', function () {
+        var modalId = $(this).data('modal-id');
+        abrirModal(modalId);
+    });
+
+    // Abrir otro modal dentro de un modal
+    $('body').on('click', '.buttonModal2', function () {
+        var modalId = $(this).data('modal-id');
+        abrirModal(modalId);
+    });
 });
 

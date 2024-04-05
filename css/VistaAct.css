@@ -21,3 +21,14 @@
 .functionbutton i{
     width: 5rem;
 }
+
+button {
+    border: none;
+    background-color: #9900ff;
+    border-radius: 10px;
+    background-size: 100% auto;
+    font-size: 15px;
+    margin: .5rem;
+    align-items: center;
+    color: aliceblue;
+}

@@ -92,10 +92,12 @@
                                 <div class="button-create">
                                     <p>Papelera</p>
                                     <div class="functionbutton">
-                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buttonModalDrop"><i class="fas fa-trash-alt"></i></button>
+                                        <button type="button" class="btn btn-danger  buttonModal" data-bs-toggle="modal" data-modal-id="myModalDropTask"><i class="fas fa-trash-alt"></i></button>
+                                        
                                   </div>
                                   </div>
                                   <div class="main-task">
+                                    <div class="task-center">
                                     <label class="checkbox">
                                         <input type="checkbox" checked="checked">
                                         <div class="checkmark"></div>
@@ -104,6 +106,27 @@
                                         <h3>name Actividades</h3>
                                         <p>fecha de Actividades</p>
                                       </div>
+                                    </div>
+                                    <div class="task-center">
+                                        <label class="checkbox">
+                                            <input type="checkbox" checked="checked">
+                                            <div class="checkmark"></div>
+                                          </label>
+                                          <div class="card">
+                                            <h3>name Actividades</h3>
+                                            <p>fecha de Actividades</p>
+                                          </div>
+                                        </div>
+                                        <div class="task-center">
+                                            <label class="checkbox">
+                                                <input type="checkbox" checked="checked">
+                                                <div class="checkmark"></div>
+                                              </label>
+                                              <div class="card">
+                                                <h3>name Actividades</h3>
+                                                <p>fecha de Actividades</p>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                         </section>
@@ -112,34 +135,6 @@
             </main>
         </div>
     </div>
-
-
-  <!-- Modal Eliminar-->
-<div class="modal fade" id="myModalDrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar Actividad</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-           <p>¿estas seguro de elimnar todas las Actividades?</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary">Eliminar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-<script>
-    var myModalBtn = document.querySelector('[data-bs-target="#buttonModalDrop"]');
-myModalBtn.addEventListener('click', function () {
-    var myModal = new bootstrap.Modal(document.getElementById('myModalDrop'));
-    myModal.show();
-});
 
 </script>
  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 

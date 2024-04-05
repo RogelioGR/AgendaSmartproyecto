@@ -1,0 +1,49 @@
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModalCreateGroup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Grupo</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="tittle">
+                <a href="#">Crear Grupo</a>
+                <a>|</a>
+                <a href="#"  data-bs-target="#myModalUnir" data-bs-toggle="modal">Unir a grupo</a>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="" placeholder="Nombre de equipo">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Crear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModalUnir" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Unir a Grupo</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="tittle">
+                <a href="#"  class="buttonModal" data-bs-toggle="modal" data-modal-id="myModalCreateGroup">Crear Grupo</a>
+                <a href="#">Unir a grupo</a>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="" placeholder="Link o codigo de grupo">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>  
+            <button type="button" class="btn btn-primary">Unir</button>     
+        </div>
+      </div>
+    </div>
+  </div>
