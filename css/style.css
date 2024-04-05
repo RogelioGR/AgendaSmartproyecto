@@ -109,7 +109,7 @@
     align-items: center;
     height: 100vh;
     backdrop-filter: blur(30px);
-    background: rgba(193, 193, 193, 0.805);
+    background-color: rgba(0, 0, 0, 0.5);
     }
    .loader{
     overflow: hidden;
